@@ -20,5 +20,5 @@ a nimingban iOS client
 # Requirements
 iOS8
 
-#License
+# License
 MIT License
