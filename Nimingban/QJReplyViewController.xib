@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QJReplyViewController">
+            <connections>
+                <outlet property="tableView" destination="LyV-wi-n9p" id="PlE-Nc-eRJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LyV-wi-n9p">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LyV-wi-n9p" secondAttribute="trailing" id="2EG-4D-2bS"/>
+                <constraint firstAttribute="bottom" secondItem="LyV-wi-n9p" secondAttribute="bottom" id="J2G-25-A3h"/>
+                <constraint firstItem="LyV-wi-n9p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NVp-O4-3DA"/>
+                <constraint firstItem="LyV-wi-n9p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rHz-mH-eDm"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="75.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QJSideLeftHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNP-pr-Nhh">
+                    <rect key="frame" x="15" y="10" width="5" height="20"/>
+                    <color key="backgroundColor" red="0.80932754278182983" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="HVQ-ro-5RY"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="综合" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QF-DF-Yun">
+                    <rect key="frame" x="30" y="11.5" width="311" height="18"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="0.80932754279999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Kv2-SN-PEP">
+                    <rect key="frame" x="351" y="12.5" width="9" height="15"/>
+                    <color key="tintColor" red="0.80932754279999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="9" id="5Vp-Ve-xNX"/>
+                        <constraint firstAttribute="height" constant="15" id="Fk8-zG-8rm"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KNP-pr-Nhh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="BAz-jh-LVv"/>
+                <constraint firstAttribute="bottom" secondItem="KNP-pr-Nhh" secondAttribute="bottom" constant="10" id="JCs-22-Thu"/>
+                <constraint firstItem="Kv2-SN-PEP" firstAttribute="leading" secondItem="4QF-DF-Yun" secondAttribute="trailing" constant="10" id="NN5-OH-OtQ"/>
+                <constraint firstAttribute="trailing" secondItem="Kv2-SN-PEP" secondAttribute="trailing" constant="15" id="SS5-GW-Rtb"/>
+                <constraint firstItem="KNP-pr-Nhh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="gPa-iE-WO0"/>
+                <constraint firstItem="4QF-DF-Yun" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nPc-WM-MT8"/>
+                <constraint firstItem="4QF-DF-Yun" firstAttribute="leading" secondItem="KNP-pr-Nhh" secondAttribute="trailing" constant="10" id="ubw-TT-WS8"/>
+                <constraint firstItem="Kv2-SN-PEP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xzP-dv-3Ae"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headTitleLabel" destination="4QF-DF-Yun" id="XeI-zp-VKO"/>
+                <outlet property="rightImageView" destination="Kv2-SN-PEP" id="U44-7t-VM4"/>
+            </connections>
+            <point key="canvasLocation" x="42.5" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="right_arrow" width="9" height="15"/>
+    </resources>
+</document>

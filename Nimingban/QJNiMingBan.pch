@@ -1,0 +1,43 @@
+//
+//  QJNiMingBan.pch
+//  Nimingban
+//
+//  Created by QinJ on 2017/6/26.
+//  Copyright © 2017年 kayanouriko. All rights reserved.
+//
+
+#ifndef QJNiMingBan_pch
+#define QJNiMingBan_pch
+
+/***
+ * 
+ 注意事项
+ 
+ 1 A岛接口的分页都是从1开始的,不是从0开始
+ */
+
+/*
+ *  头文件
+ */
+#import "QJToast.h"
+#import "QJGlobalInfo.h"
+/*
+ *  宏定义
+ */
+//检验字典null值
+#define isnull(dict, key) dict[key] == nil || [dict[key] isKindOfClass:[NSNull class]] ? @"" : dict[key]
+//屏幕宽度和高度
+#define UIScreenWidth() [UIScreen mainScreen].bounds.size.width
+#define UIScreenHeight() [UIScreen mainScreen].bounds.size.height
+//一些固定参数
+#define UINavigationBarHeight() 64
+#define UITabBarHeight() 49
+#define UISearchBarHeight() 44
+//颜色
+#define CusGrayColor [UIColor colorWithRed:0.600 green:0.600 blue:0.624 alpha:1.00]
+#define AppThemeColor [UIColor colorWithRed:0.000 green:0.573 blue:0.780 alpha:1.00]
+//状态栏圈圈
+#define NetworkShow() [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES]
+#define NetworkHidden() [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]
+
+#endif

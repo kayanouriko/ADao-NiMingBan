@@ -1,0 +1,21 @@
+PODS:
+  - FLAnimatedImage (1.0.12)
+  - IQKeyboardManager (4.0.9)
+  - SDWebImage/Core (4.0.0)
+  - SDWebImage/GIF (4.0.0):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+
+DEPENDENCIES:
+  - FLAnimatedImage
+  - IQKeyboardManager
+  - SDWebImage/GIF
+
+SPEC CHECKSUMS:
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: 7f3f0ee4114e9c10df397ea0035751ac26b8df02
+
+COCOAPODS: 1.1.1
